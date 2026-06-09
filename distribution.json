@@ -1,43 +1,32 @@
 {
     "version": "1.0.0",
     "rss": "https://raw.githubusercontent.com/bfmartins00-bit/eternalpower-distro/main/",
+    "discord": {
+        "clientId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+        "smallImageText": "EternalPower RPG",
+        "smallImageKey": "logo_ep"
+    },
     "servers": [
         {
             "id": "EternalPower.Main",
             "name": "EternalPower RPG",
-            "description": "Servidor RPG Anime — Cobblemon, Bleach, Naruto, Demon Slayer e mais!",
+            "description": "Servidor RPG Anime - Cobblemon, Bleach, Naruto, Demon Slayer",
             "icon": "https://raw.githubusercontent.com/bfmartins00-bit/eternalpower-distro/main/images/server-icon.png",
             "version": "1.0.0",
             "address": "enx-cirion-67.enx.host:10023",
             "minecraftVersion": "1.20.1",
             "discord": {
-                "clientId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
-                "smallImageText": "EternalPower RPG",
-                "smallImageKey": "logo_ep",
+                "shortId": "EternalPower",
                 "largeImageText": "EternalPower RPG Anime",
                 "largeImageKey": "logo_ep"
             },
             "mainServer": true,
             "autoconnect": false,
             "javaOptions": {
-                "supported": "17.x.x || 21.x.x",
+                "supported": ">=17.x",
                 "suggestedMajor": 21,
                 "platformOptions": [
-                    {
-                        "platform": "win32",
-                        "architecture": "x64",
-                        "distribution": "ADOPTIUM"
-                    },
-                    {
-                        "platform": "darwin",
-                        "architecture": "x64",
-                        "distribution": "ADOPTIUM"
-                    },
-                    {
-                        "platform": "linux",
-                        "architecture": "x64",
-                        "distribution": "ADOPTIUM"
-                    }
+                    { "platform": "win32", "architecture": "x64", "distribution": "TEMURIN" }
                 ]
             },
             "modules": []
