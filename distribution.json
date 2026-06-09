@@ -1,28 +1,24 @@
 {
-    "_comment": "EternalPower Launcher — Distribution Index",
-    "_comment2": "Hospede este arquivo no GitHub Pages e coloque a URL no distromanager.js",
     "version": "1.0.0",
-    "discord": {
-        "clientId": "SEU_DISCORD_APP_ID",
-        "smallImageText": "EternalPower RPG",
-        "smallImageKey": "logo_ep"
-    },
+    "rss": "https://raw.githubusercontent.com/bfmartins00-bit/eternalpower-distro/main/",
     "servers": [
         {
             "id": "EternalPower.Main",
             "name": "EternalPower RPG",
-            "description": "Servidor RPG Anime — Jujutsu Kaisen, Demon Slayer, Naruto, One Piece, Bleach e Cobblemon!",
-            "icon": "https://SEU_USUARIO.github.io/eternalpower-distro/images/server-icon.png",
+            "description": "Servidor RPG Anime — Cobblemon, Bleach, Naruto, Demon Slayer e mais!",
+            "icon": "https://raw.githubusercontent.com/bfmartins00-bit/eternalpower-distro/main/images/server-icon.png",
             "version": "1.0.0",
             "address": "enx-cirion-67.enx.host:10023",
             "minecraftVersion": "1.20.1",
             "discord": {
-                "shortId": "EternalPower",
+                "clientId": "f8cdef31-a31e-4b4a-93e4-5f571e91255a",
+                "smallImageText": "EternalPower RPG",
+                "smallImageKey": "logo_ep",
                 "largeImageText": "EternalPower RPG Anime",
                 "largeImageKey": "logo_ep"
             },
             "mainServer": true,
-            "autoconnect": true,
+            "autoconnect": false,
             "javaOptions": {
                 "supported": "17.x.x || 21.x.x",
                 "suggestedMajor": 21,
@@ -38,112 +34,13 @@
                         "distribution": "ADOPTIUM"
                     },
                     {
-                        "platform": "darwin",
-                        "architecture": "arm64",
-                        "distribution": "ADOPTIUM"
-                    },
-                    {
                         "platform": "linux",
                         "architecture": "x64",
                         "distribution": "ADOPTIUM"
                     }
                 ]
             },
-            "modules": [
-                {
-                    "_comment": "Forge 1.20.1 — versão obrigatória para o servidor",
-                    "_comment2": "Substitua o MD5 e size pelo do forge real após baixar em https://files.minecraftforge.net",
-                    "id": "net.minecraftforge:forge:1.20.1-47.3.0",
-                    "name": "Minecraft Forge 47.3.0",
-                    "type": "ForgeHosted",
-                    "artifact": {
-                        "size": 7654321,
-                        "md5": "COLE_O_MD5_DO_FORGE_AQUI",
-                        "url": "https://maven.minecraftforge.net/net/minecraftforge/forge/1.20.1-47.3.0/forge-1.20.1-47.3.0-installer.jar"
-                    },
-                    "required": {
-                        "value": true,
-                        "def": true
-                    }
-                },
-                {
-                    "_comment": "=== MODS DO SERVIDOR ===",
-                    "_comment2": "Para cada mod, coloque o arquivo no GitHub e preencha size+md5",
-                    "_comment3": "Gerar MD5: md5sum arquivo.jar (Linux/Mac) ou CertUtil -hashfile arquivo.jar MD5 (Win)",
-                    "_comment4": "Gerar size: ls -la arquivo.jar (Linux/Mac) ou dir arquivo.jar (Win)"
-                },
-                {
-                    "id": "com.cobblemon:cobblemon:1.5.2+1.20.1",
-                    "name": "Cobblemon",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 0,
-                        "md5": "COLE_MD5_AQUI",
-                        "url": "https://SEU_USUARIO.github.io/eternalpower-distro/mods/cobblemon-forge-1.5.2+1.20.1.jar"
-                    },
-                    "required": {
-                        "value": true,
-                        "def": true
-                    }
-                },
-                {
-                    "id": "net.kimetsunoyaiba:kimetsunoyaiba:VERSAO",
-                    "name": "Kimetsu no Yaiba (Demon Slayer)",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 0,
-                        "md5": "COLE_MD5_AQUI",
-                        "url": "https://SEU_USUARIO.github.io/eternalpower-distro/mods/kimetsunoyaiba-VERSAO.jar"
-                    },
-                    "required": {
-                        "value": true,
-                        "def": true
-                    }
-                },
-                {
-                    "id": "com.bleachawaken:bleachawaken:VERSAO",
-                    "name": "Bleach Awaken",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 0,
-                        "md5": "COLE_MD5_AQUI",
-                        "url": "https://SEU_USUARIO.github.io/eternalpower-distro/mods/bleachawaken-VERSAO.jar"
-                    },
-                    "required": {
-                        "value": true,
-                        "def": true
-                    }
-                },
-                {
-                    "id": "com.ninshuorigins:ninshuorigins:VERSAO",
-                    "name": "Ninshu Origins (Naruto)",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 0,
-                        "md5": "COLE_MD5_AQUI",
-                        "url": "https://SEU_USUARIO.github.io/eternalpower-distro/mods/ninshuorigins-VERSAO.jar"
-                    },
-                    "required": {
-                        "value": true,
-                        "def": true
-                    }
-                },
-                {
-                    "_comment": "Mods opcionais — o player pode desativar",
-                    "id": "com.parcool:parcool:VERSAO",
-                    "name": "PARCool (Parkour)",
-                    "type": "ForgeMod",
-                    "artifact": {
-                        "size": 0,
-                        "md5": "COLE_MD5_AQUI",
-                        "url": "https://SEU_USUARIO.github.io/eternalpower-distro/mods/parcool-VERSAO.jar"
-                    },
-                    "required": {
-                        "value": false,
-                        "def": true
-                    }
-                }
-            ]
+            "modules": []
         }
     ]
 }
